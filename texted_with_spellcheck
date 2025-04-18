@@ -679,7 +679,7 @@ void runEditor() {
                 // Reverse the extracted string to get the actual word
                 reverse(str.begin(), str.end());
                 transform(str.begin(), str.end(), str.begin(), ::tolower);
-                spellcheckAndSuggest(trie, str, "C:/Users/sohom/Downloads/DSA-Group-3-main/DSA-Group-3-main/Primary Implementations/suggestions.txt");
+                spellcheckAndSuggest(trie, str, "C:dictionary.txt");
                 leftStack.push(' ');
                 cursorX++;
             } 
@@ -741,7 +741,7 @@ void runEditor() {
 
 int main() {
     
-    loadDictionary(trie, "C:/Users/sohom/Downloads/DSA-Group-3-main/DSA-Group-3-main/Primary Implementations/dictionary.txt");  // Load words from dictionary.txt
+    loadDictionary(trie, "C:dictionary.txt");  // Load words from dictionary.txt
     TextEditor editor;
     editor.runEditor();
     return 0;
